@@ -313,7 +313,7 @@ section.academic{
     height: 100%; 
 }
 .academic__title{
-    width: 40%;
+    width: auto;
     font-size: 3rem;
     margin-bottom: 5%;
     border-bottom: .4rem solid white;
@@ -496,8 +496,16 @@ section.formcontato{
     padding: 2rem 0;
     gap: 1rem; 
 }
+.formcontato--esquerda {
+    display: flex;
+    justify-content: center;
+}
 .formcontato--esquerda .formcontato__text{
     width: 50%;
+}
+
+.formcontato__img{
+    width: 90%;
 }
 
 .formcontato__title{
@@ -698,8 +706,7 @@ section.formcontato{
         width: 25%;
         height: 15%;
            
-    }
-
+    } 
     
      .formcontato__contacto{
         flex-wrap: wrap;
@@ -794,6 +801,7 @@ section.formcontato{
 }
 
 @media screen and (max-width: 576px){
+     
     .home__description{  
         width: 90%;   
         line-height: 1.6rem;
@@ -830,7 +838,11 @@ section.formcontato{
         overflow: hidden;
         overflow-y: scroll;
         }
-
+        .formcontato__botao{
+           
+            width: 50%; 
+        }
+        
     /* SEÇÃO FOOTER*/
      .footer__box__descricao{
         text-align: center;
